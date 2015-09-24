@@ -176,7 +176,10 @@
                                     .attr('width', scope.options.chart.width  || '100%')
                                     .datum(data)
                                     .transition().duration(scope.options.chart.transitionDuration)
-                                    .call(scope.chart);
+                                    .call(scope.chart)
+                                    .style("width", scope.options.chart.width)
+                                    .style("height",  scope.options.chart.height)
+                                    .style("display", "block");
                             }
                         },
 
